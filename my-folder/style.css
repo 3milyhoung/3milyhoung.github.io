@@ -9,14 +9,13 @@ body {
 }
 
 .navbar {
-  background-color: #ffe066;
+  background-color: #C7BACE;
   padding: 1rem;
-  border-bottom: 2px solid #f2d024;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #63585E;
   margin: 0 1rem;
   font-weight: bold;
   font-size: 1.1rem;
@@ -24,30 +23,9 @@ body {
 }
 
 .navbar a:hover {
-  color: #d17b00;
+  color: #B36B92;
 }
 
 .container {
   padding: 2rem;
-}
-
-.avatar {
-  width: 200px;
-  margin-top: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #ffd54f;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #fbc02d;
 }
