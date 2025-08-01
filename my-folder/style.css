@@ -10,16 +10,15 @@ body {
 
 .navbar {
   background-color: #C7BACE;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .navbar a {
   text-decoration: none;
   color: #63585E;
-  margin: 0 1rem;
+  margin: 1rem;
   font-weight: bold;
   font-size: 1.1rem;
-  transition: color 0.3s;
 }
 
 .navbar a:hover {
