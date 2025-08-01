@@ -1,10 +1,12 @@
 body {
-  font-family: 'Josefin', sans;
+  div {
+    font-family: 'Josefin', sans;
   background-color: #998DA0;
   margin: 0;
   padding: 0;
-  text-align: justify;
+  text-align: left;
   color: #63585E;
+  }
 }
 
 .navbar {
