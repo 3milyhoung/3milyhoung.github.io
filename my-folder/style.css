@@ -99,3 +99,25 @@ ul {
     transform: translateY(0);
   }
 }
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+}
+
+#nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.show {
+  display: flex !important;
+}
