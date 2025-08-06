@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav id="nav-links">
+      <a href="index.html#contact">Contact Me</a>
+      <a href="index.html#work">My Work</a>
+    </nav>
+  </header>
+
+  <main class="contact-section">
+    <h1>Contact Me!</h1>
+    <section class="contact-container">
+      <form class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send me a message</button>
+      </form>
+
+      <div class="contact-info">
+        <div>
+          <h3>Contact</h3>
+          <p>3milyhoung@gmail.com<br>347-445-4261</p>
+        </div>
+        <div>
+          <h3>Based in</h3>
+          <p>New Hyde Park,<br>New York</p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="tiktok.svg" alt="TikTok"></a>
+          <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+        </div>
+      </div>
+
+      <div class="contact-links">
+        <h3>My Links:</h3>
+        <a class="link-button" href="https://www.linkedin.com/in/emily-houng-130b97355" target="_blank">LinkedIn</a>
+        <a class="link-button" href="https://docs.google.com/document/d/1hty8qakEM2vLax8k9xE-9Azh5CUMdRZCS8l5XPAzPCI/edit?tab=t.0" target="_blank">Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
