@@ -1,31 +1,100 @@
-body {
-  font-family: 'Josefin', sans;
-  background-color: #998DA0;
+* {
   margin: 0;
   padding: 0;
-  text-align: left;
-  color: #63585E;
-  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.navbar {
-  background-color: #C7BACE;
-  padding: 1rem;
+body {
+  background-color: #8c7b94;
+  color: #3c3c3c;
 }
 
-.navbar a {
+header {
+  background-color: #c2b4c7;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  font-size: 1.2rem;
+}
+
+header a {
   text-decoration: none;
-  color: #63585E;
-  margin: 0 1rem;
-  font-weight: bold;
-  font-size: 1.1rem;
+  color: #3c3c3c;
+  transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-  color: #B36B92;
-  color: #B36B92
+header a:hover {
+  color: #000;
 }
 
 .container {
-  padding: 1rem;
+  padding: 40px;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3c3c3c;
+}
+
+.intro, .skills, .links {
+  background-color: #c7e8e3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px #7c7483;
+  margin-bottom: 30px;
+  animation: slideUp 1s ease;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4a3f4e;
+  font-weight: bold;
+}
+
+.intro p {
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.links a {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #3c3c3c;
+  font-weight: bold;
+  box-shadow: 2px 2px #888;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
