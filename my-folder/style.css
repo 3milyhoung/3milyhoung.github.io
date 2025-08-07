@@ -41,10 +41,10 @@ h1 {
 }
 
 .intro, .skills, .links {
-  background-color: #B9C0DA;           /* new fill color */
+  background-color: #B9C0DA;          
   padding: 20px;
   border-radius: 12px;
-  border: 3px solid #C4DACF;           /* outline/stroke */
+  border: 3px solid #C4DACF;           
   box-shadow: 5px 5px #7c7483;
   margin-bottom: 30px;
   animation: slideUp 1s ease;
