@@ -2,61 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Me</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
+    body {
+      margin: 0;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      background-color: #A08AA1;
+      color: #3f3f3f;
+    }
+
+    header {
+      background-color: #B9A8BB;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    header nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #3f3f3f;
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      padding: 1.5rem 2rem 0 2rem;
+      color: #3f3f3f;
+    }
+
+    hr {
+      border: 1px solid #C4DACF;
+      margin: 0 2rem 2rem 2rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 2rem 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .form-box {
+      background-color: #A08AA1;
+      border: 2px solid #4f3f4f;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 60%;
+      box-sizing: border-box;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-bottom: 2px solid #4f3f4f;
+      background-color: transparent;
+      color: #2c2c2c;
+      outline: none;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #4f3f4f;
+      color: #C4DACF;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3e2e3e;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    .links-box {
+      background-color: #B9C0DA;
+      border: 4px solid #C4DACF;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 30%;
+      box-sizing: border-box;
+    }
+
+    .links-box h3 {
+      margin-top: 0;
+    }
+
+    .link-button {
+      display: block;
+      margin: 1rem auto;
+      padding: 10px 15px;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-decoration: none;
+      color: #3f3f3f;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-box, .links-box {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    
-    <nav id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="contactme.html">Contact Me</a>
+    <nav>
+      <a href="index.html">About Me</a>
+      <a href="work.html">My Work</a>
     </nav>
   </header>
 
-  <div class="container contact-page">
-    <h1>Contact Me!</h1>
-    <div class="contact-form">
-      <form>
+  <h1>Contact Me!</h1>
+  <hr>
+
+  <div class="container">
+    <!-- Left: Form and Info -->
+    <div class="form-box">
+      <div class="form-group">
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" />
-
+        <input type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
         <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" />
-
+        <input type="email" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Send me a message</button>
-      </form>
+        <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+      </div>
+      <button type="submit">Send me a message</button>
 
       <div class="contact-info">
-        <p><strong>Contact</strong><br>3milyhoung@gmail.com<br>347-445-4261</p>
-        <p><strong>Based in</strong><br>New Hyde Park,<br>New York</p>
-        <div class="socials">
-          <img src="instagram-icon.png" alt="Instagram">
-          <img src="tiktok-icon.png" alt="TikTok">
-          <img src="twitter-icon.png" alt="Twitter">
-        </div>
+        <h3>Contact</h3>
+        <p>3milyhoung@gmail.com</p>
+        <p>347-445-4261</p>
+        <h3>Based in</h3>
+        <p>New Hyde Park,<br>New York</p>
       </div>
+    </div>
 
-      <div class="my-links">
-        <h3>My Links:</h3>
-        <a href="https://www.linkedin.com/in/emily-houng-130b97355" target="_blank">LinkedIn</a>
-        <a href="https://docs.google.com/document/d/1hty8qakEM2vLax8k9xE-9Azh5CUMdRZCS8l5XPAzPCI/edit?tab=t.0" target="_blank">Resume</a>
-      </div>
+    <!-- Right: Links box -->
+    <div class="links-box">
+      <h3>My Links:</h3>
+      <a class="link-button" href="#">LinkedIn</a>
+      <a class="link-button" href="#">Resume</a>
     </div>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
